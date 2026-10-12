@@ -71,7 +71,8 @@ class AppBlockerSettingViewModel(application: Application) : AndroidViewModel(ap
             // This escape hatch must not become usable while enabling it is still pending.
             dataStoreManager.settings.collectLatest { settings ->
                 _temporaryDisableAvailable.value =
-                    !settings.settingsChangeDelayConfig2.isEnabled
+                    !settings.settingsChangeDelayConfig2.isEnabled &&
+                    !settings.settingsChangeDelayConfig2.requireTamperProtectionOff
             }
         }
     }
@@ -110,13 +111,10 @@ class AppBlockerSettingViewModel(application: Application) : AndroidViewModel(ap
         }
     }
 
-    fun deleteGroup(groupId: String) {
-        viewModelScope.launch {
-            val currentSettings = dataStoreManager.settingsForEditing.first()
-            val updatedGroups = currentSettings.blockedAppGroups.toMutableList()
-            updatedGroups.removeAll { it.id == groupId }
-            updateGroups(updatedGroups)
-        }
+    suspend fun deleteGroup(groupId: String) {
+        val currentSettings = dataStoreManager.settingsForEditing.first()
+        val updatedGroups = currentSettings.blockedAppGroups.filterNot { it.id == groupId }
+        persistGroups(updatedGroups)
     }
 
     fun updateGroupActiveState(index: Int, isActive: Boolean) {

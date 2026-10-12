@@ -14,6 +14,8 @@ import androidx.lifecycle.lifecycleScope
 import com.google.gson.Gson
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.CancellationException
+import neth.iecal.curbox.CrashLogger
 import kotlinx.coroutines.flow.collectLatest
 import neth.iecal.curbox.R
 import neth.iecal.curbox.data.models.AppBlockerWarningScreenConfig
@@ -87,9 +89,11 @@ class CreateAppGroupFragment : Fragment() {
                         binding.btnDeleteGroup.visibility = View.VISIBLE
                         binding.btnDeleteGroup.setOnClickListener {
                             isDeleting = true
-                            viewModel.deleteGroup(group.id)
-                            Toast.makeText(requireContext(), getString(R.string.group_deleted), Toast.LENGTH_SHORT).show()
-                            requireActivity().finish()
+                            viewLifecycleOwner.lifecycleScope.launch {
+                                viewModel.deleteGroup(group.id)
+                                Toast.makeText(requireContext(), getString(R.string.group_deleted), Toast.LENGTH_SHORT).show()
+                                requireActivity().finish()
+                            }
                         }
 
                         group.config?.let { config ->
@@ -204,6 +208,11 @@ class CreateAppGroupFragment : Fragment() {
 
                 Toast.makeText(requireContext(), getString(R.string.group_saved_successfully), Toast.LENGTH_SHORT).show()
                 requireActivity().finish()
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Exception) {
+                CrashLogger(requireContext().applicationContext).logNonFatalError(e)
+                Toast.makeText(requireContext(), R.string.settings_save_failed, Toast.LENGTH_SHORT).show()
             } finally {
                 _binding?.fabSaveGroup?.isEnabled = true
             }
