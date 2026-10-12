@@ -106,7 +106,7 @@ object RestrictionComparator {
     private fun keywordGroup(o: KeywordGroup, n: KeywordGroup): Boolean {
         if (!temporaryDisableSameOrShorter(o.isActive, o.temporarilyDisabledUntilMs,
                 n.isActive, n.temporarilyDisabledUntilMs)) return false
-        if (!n.selectedKeywords.containsAll(o.selectedKeywords)) return false
+        if (!n.selectedKeywords.toHashSet().containsAll(o.selectedKeywords)) return false
         if (!warningConfig(o.warningScreenConfig, n.warningScreenConfig)) return false
         val oldConfig = o.config ?: return false
         val newConfig = n.config ?: return false

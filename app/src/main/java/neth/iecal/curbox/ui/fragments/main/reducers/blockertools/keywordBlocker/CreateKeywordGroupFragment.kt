@@ -299,6 +299,7 @@ class CreateKeywordGroupFragment : Fragment() {
         )
 
         binding.fabSaveGroup.isEnabled = false
+        binding.fabSaveGroup.setText(R.string.settings_saving)
         viewLifecycleOwner.lifecycleScope.launch {
             try {
                 if (existingGroupId != null) viewModel.updateGroupByIdAndWait(group)
@@ -310,7 +311,10 @@ class CreateKeywordGroupFragment : Fragment() {
                 CrashLogger(requireContext().applicationContext).logNonFatalError(e)
                 Toast.makeText(requireContext(), R.string.settings_save_failed, Toast.LENGTH_SHORT).show()
             } finally {
-                _binding?.fabSaveGroup?.isEnabled = true
+                _binding?.fabSaveGroup?.apply {
+                    isEnabled = true
+                    setText(R.string.done)
+                }
             }
         }
     }

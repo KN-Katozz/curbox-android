@@ -12,6 +12,9 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import neth.iecal.curbox.R
 import neth.iecal.curbox.data.models.AppGroup
 import neth.iecal.curbox.data.models.GatedSettingsField
@@ -150,7 +153,7 @@ class DataStoreManager(private val context: Context) {
      * The values the user has requested, including changes still waiting for their deadline.
      * Settings editors should use this flow; blockers must keep using [settings].
      */
-    val settingsForEditing = settings.map(::overlayPendingChanges)
+    val settingsForEditing = settings.map(::overlayPendingChanges).flowOn(Dispatchers.Default)
 
     suspend fun updateAppGroups(newGroups: List<AppGroup>) {
         updateGated(GatedSettingsField.APP_GROUPS) { newGroups }
@@ -554,7 +557,7 @@ class DataStoreManager(private val context: Context) {
      * countdown ends. A stricter instant write also drops the field's pending change, because
      * that pending snapshot no longer matches what the user sees.
      */
-    private suspend fun updateGated(field: GatedSettingsField, computeNewValue: (Settings) -> Any) {
+    private suspend fun updateGated(field: GatedSettingsField, computeNewValue: (Settings) -> Any): Unit = withContext(Dispatchers.Default) {
         var deferredUntilMs = 0L
         var hadPendingForField = false
         var tamperGated = false
@@ -602,7 +605,7 @@ class DataStoreManager(private val context: Context) {
         }
         schedulePendingChanges()
         if (unchangedPending) {
-            return
+            return@withContext
         } else if (deferredUntilMs > 0L) {
             notifyChangeDeferred(field, deferredUntilMs, hadPendingForField, tamperGated)
         } else if (hadPendingForField) {
