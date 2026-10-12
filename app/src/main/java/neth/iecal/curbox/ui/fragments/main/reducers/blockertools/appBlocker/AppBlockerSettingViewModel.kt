@@ -81,30 +81,32 @@ class AppBlockerSettingViewModel(application: Application) : AndroidViewModel(ap
         application.sendBroadcast(intent)
     }
 
-    fun updateGroups(newGroups: List<AppGroup>) {
-        viewModelScope.launch {
-            dataStoreManager.updateAppGroups(newGroups)
-            requestAppBlockerRefresh()
-        }
-    }
-    
-    fun addGroup(group: AppGroup) {
-        viewModelScope.launch {
-            val currentSettings = dataStoreManager.settingsForEditing.first()
-            val updatedGroups = currentSettings.blockedAppGroups.toMutableList().apply { add(group) }
-            updateGroups(updatedGroups)
-        }
+    private suspend fun persistGroups(newGroups: List<AppGroup>) {
+        dataStoreManager.updateAppGroups(newGroups)
+        requestAppBlockerRefresh()
     }
 
-    fun updateGroupById(updatedGroup: AppGroup) {
-        viewModelScope.launch {
-            val currentSettings = dataStoreManager.settingsForEditing.first()
-            val updatedGroups = currentSettings.blockedAppGroups.toMutableList()
-            val index = updatedGroups.indexOfFirst { it.id == updatedGroup.id }
-            if (index != -1) {
-                updatedGroups[index] = updatedGroup
-                updateGroups(updatedGroups)
-            }
+    fun updateGroups(newGroups: List<AppGroup>) = viewModelScope.launch {
+        persistGroups(newGroups)
+    }
+    
+    fun addGroup(group: AppGroup) = viewModelScope.launch {
+        addGroupAndWait(group)
+    }
+
+    suspend fun addGroupAndWait(group: AppGroup) {
+        val currentSettings = dataStoreManager.settingsForEditing.first()
+        val updatedGroups = currentSettings.blockedAppGroups.toMutableList().apply { add(group) }
+        persistGroups(updatedGroups)
+    }
+
+    suspend fun updateGroupById(updatedGroup: AppGroup) {
+        val currentSettings = dataStoreManager.settingsForEditing.first()
+        val updatedGroups = currentSettings.blockedAppGroups.toMutableList()
+        val index = updatedGroups.indexOfFirst { it.id == updatedGroup.id }
+        if (index != -1) {
+            updatedGroups[index] = updatedGroup
+            persistGroups(updatedGroups)
         }
     }
 

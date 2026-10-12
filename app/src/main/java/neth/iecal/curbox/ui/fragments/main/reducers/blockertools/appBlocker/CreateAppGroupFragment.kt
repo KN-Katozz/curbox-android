@@ -189,18 +189,25 @@ class CreateAppGroupFragment : Fragment() {
             return
         }
 
-        if (isEditingRecord && targetExistingGroup != null) {
-            viewModel.updateGroupById(newGroup)
-        } else {
-            viewModel.addGroup(newGroup)
-            if (arguments == null) {
-                arguments = Bundle()
-            }
-            arguments?.putString("group_id", newGroupId)
-        }
+        binding.fabSaveGroup.isEnabled = false
+        viewLifecycleOwner.lifecycleScope.launch {
+            try {
+                if (isEditingRecord && targetExistingGroup != null) {
+                    viewModel.updateGroupById(newGroup)
+                } else {
+                    viewModel.addGroupAndWait(newGroup)
+                    if (arguments == null) {
+                        arguments = Bundle()
+                    }
+                    arguments?.putString("group_id", newGroupId)
+                }
 
-        Toast.makeText(requireContext(), getString(R.string.group_saved_successfully), Toast.LENGTH_SHORT).show()
-        requireActivity().finish()
+                Toast.makeText(requireContext(), getString(R.string.group_saved_successfully), Toast.LENGTH_SHORT).show()
+                requireActivity().finish()
+            } finally {
+                _binding?.fabSaveGroup?.isEnabled = true
+            }
+        }
     }
 
     private fun openAppSelector() {

@@ -33,6 +33,22 @@ class AppGroupRestrictionComparatorTest {
     }
 
     @Test
+    fun addingAppDoesNotOffsetShorterActiveSchedule() {
+        val proposed = group(startHour = 10, usageMinutes = 60).copy(
+            selectedPackages = oldGroup.selectedPackages + "another.app"
+        )
+        assertFalse(RestrictionComparator.appGroups(listOf(oldGroup), listOf(proposed)))
+    }
+
+    @Test
+    fun addingAppWithSameScheduleIsStricter() {
+        val proposed = oldGroup.copy(
+            selectedPackages = oldGroup.selectedPackages + "another.app"
+        )
+        assertTrue(RestrictionComparator.appGroups(listOf(oldGroup), listOf(proposed)))
+    }
+
+    @Test
     fun higherUsageAllowanceIsWeaker() {
         assertFalse(
             RestrictionComparator.appGroups(
