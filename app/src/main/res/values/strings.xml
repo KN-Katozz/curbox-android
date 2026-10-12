@@ -1625,6 +1625,8 @@
     <string name="warning_proceeds_left">You have %1$d of %2$d opens left</string>
     <string name="warning_typing_quote">\"%1$s\"</string>
     <string name="warning_scan_qr_code">Scan QR Code</string>
+    <string name="scanner_flashlight_on">Turn on flashlight</string>
+    <string name="scanner_flashlight_off">Turn off flashlight</string>
     <string name="warning_scan_nfc_tag">Scan NFC Tag</string>
     <string name="warning_math_problem">Solve %1$s</string>
     <string name="warning_math_progress">%1$d of %2$d solved</string>
