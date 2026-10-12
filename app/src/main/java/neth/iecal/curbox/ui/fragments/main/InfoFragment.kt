@@ -47,6 +47,7 @@ class InfoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.textAppVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
         setupAccountSection()
         setupUsageTrackingSettings()
         setupClickListeners()
