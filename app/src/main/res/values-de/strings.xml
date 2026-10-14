@@ -391,12 +391,12 @@
     <string name="sync_paywall_checking">Prüfe dein Abo</string>
     <string name="sync_paywall_renewal_note">Erneuert sich jedes Jahr bis du abbrichst.</string>
     <string name="sync_paywall_signed_in_as">Angemeldet als %1$s</string>
-    <string name="sync_paywall_your_account">dein Account</string>
+    <string name="sync_paywall_your_account">Dein Account</string>
     <string name="pairing_code_warning_title">Halte diesen Code privat</string>
     <string name="pairing_code_warning_message">Dieser Code beinhaltet den geheimen Schlüssel, der all deine synchronisierten Daten freischaltet. Jeder, der ein Foto davon macht, kann deine Daten lesen. Bitte mach keine Screenshots und teile ihn auf keinen Fall. Der Code versteckt sich selbst nach einer Minute.</string>
     <string name="pairing_code_show">Code anzeigen</string>
     <string name="dnd_access_dialog_title">Bitte nicht stören</string>
-    <string name="dnd_access_dialog_message">Curbox benötigt dies, um Bitte nicht stören für dich zu aktivieren, sodass du Anrufe und Wecker stummschalten kannst während du dich fokussierst. Ohne kann Curbox Ablenkungen nicht stummschalten.\n\n🔒 Curbox sammelt, sendet oder speichert niemals deine Daten auf einem Server ohne deine Zustimmung.\n\n🛡️ Curbox respektiert deinen Frieden: Es benutzt dies nur um Ablenkungen stummzuschalten wenn du danach fragst.</string>
+    <string name="dnd_access_dialog_message">Curbox benötigt dies, um "Bitte nicht stören" für dich zu aktivieren, sodass du Anrufe und Wecker stummschalten kannst, während du dich fokussierst. Ohne kann Curbox Ablenkungen nicht stummschalten.\n\n🔒 Curbox sammelt, sendet oder speichert niemals deine Daten auf einem Server ohne deine Zustimmung.\n\n🛡️ Curbox respektiert deinen Frieden: Es benutzt dies nur um Ablenkungen stummzuschalten wenn du danach fragst.</string>
     <string name="picker_dialog_block_element">Dieses Element blockieren</string>
     <string name="picker_dialog_generated_rule">Generierte Regel:</string>
     <string name="picker_dialog_rule_desc">Auto-generiert aus deiner Auswahl. Wechsle zwischen Chips unten um anzupassen.</string>
@@ -417,12 +417,12 @@
     <string name="label_all_time">Immer</string>
     <string name="btn_clear_filters">Filter leeren</string>
     <string name="empty_intents_title">Keine Inhalte gefunden</string>
-    <string name="empty_intents_desc">Versuche filter anzupassen oder eine App zu entsperren</string>
-    <string name="grayscale_shizuku_title">Shizuku Erlaubnis benötigt</string>
-    <string name="grayscale_shizuku_desc">Diese Funktion benötigt Shizuku Berechtiungen um den Graustufenfilter korrekt anzuwenden.</string>
+    <string name="empty_intents_desc">Versuche, Filter anzupassen oder eine App zu entsperren</string>
+    <string name="grayscale_shizuku_title">Shizuku-Erlaubnis benötigt</string>
+    <string name="grayscale_shizuku_desc">Diese Funktion benötigt Shizuku-Berechtigungen, um den Graustufenfilter korrekt anzuwenden.</string>
     <string name="grayscale_secure_settings_desc">Curbox benötigt eine einmalige Berechtigung, deine Bilschirmfarben zu verändern. Erteile diese mit Shizuku. Danach funktionieren die Graustufen von selbst, auch wenn du dein Handy neu startest.</string>
     <string name="btn_grant_permission">Berechtigungen erteilen</string>
-    <string name="picker_control_tap_to_select">Klicke auf ein Element um es auszuwählen</string>
+    <string name="picker_control_tap_to_select">Klicke auf ein Element, um es auszuwählen</string>
     <string name="btn_deeper">Tiefer</string>
     <string name="btn_parent">Eltern</string>
     <string name="btn_block">Block</string>
@@ -436,26 +436,26 @@
     <string name="label_keywords_to_block">Zu sperrende Stichwörter</string>
     <string name="label_unlock_behavior">Verhalten bei Entsperrung</string>
     <string name="label_url_redirection">URL Weiterleitung</string>
-    <string name="label_show_warning_screen">Warnungbildschirm anzeigen</string>
+    <string name="label_show_warning_screen">Warnbildschirm anzeigen</string>
     <string name="label_keyword_blocker_title">Stichwortsperre</string>
     <string name="label_no_keyword_groups">Noch keine Stichwörtergruppen. Erstelle eine!</string>
     <string name="btn_undo">RÜCKGÄNGIG</string>
     <string name="label_loading">Lädt </string>
-    <string name="warning_config_title">Warnungsbildschirmskonfiguration</string>
+    <string name="warning_config_title">Warnbildschirmskonfiguration</string>
     <string name="warning_config_desc">Stell ein was passiert, wenn du deine Grenze erreichst.</string>
-    <string name="label_fixed_unlock_duration">Festgelegte Entsperrdauer: 5 mins</string>
+    <string name="label_fixed_unlock_duration">Festgelegte Entsperrdauer: 5 min</string>
     <string name="label_wait_before_unlocking">Warten vor Ensperrung: 15s</string>
-    <string name="label_wait_desc">Zwingt dich, nachzudenken bevor zu die Sperre umgehst</string>
+    <string name="label_wait_desc">Zwingt dich nachzudenken, bevor du die Sperre umgehen kannst</string>
     <string name="label_qr_auth">QR-/Barcodeauthentifizierung</string>
     <string name="btn_generate_new">Neu generieren</string>
     <string name="btn_scan_existing">Existierendes scannen</string>
     <string name="label_configured_qr">Eingestellte QR-/Barcodes:</string>
-    <string name="label_nfc_auth">NFC Authentifizierung</string>
+    <string name="label_nfc_auth">NFC-Authentifizierung</string>
     <string name="label_configured_nfc">Konfigurierte NFC-Tags:</string>
     <string name="label_typing_auth">Freischalten durch Tippen</string>
     <string name="label_typing_desc">Schreib den Satz, den der Nutzer genau abtippen muss, um die Sperre zu umgehen:</string>
-    <string name="label_intent_auth">Länge der Freischaltephrase</string>
-    <string name="label_intent_min_desc">Ich wähle aus wie viele Zeichen jemand tippen muss bevor er fortfahren kann.</string>
+    <string name="label_intent_auth">Länge der Entsperrphrase</string>
+    <string name="label_intent_min_desc">Ich wähle aus, wie viele Zeichen jemand tippen muss, bevor er fortfahren kann.</string>
     <plurals name="warning_intent_min_length">
         <item quantity="one">Minimum an Zeichen: %1$d</item>
         <item quantity="other">Minimum an Zeichen: %1$d</item>
@@ -466,7 +466,7 @@
     </plurals>
     <string name="label_limit_unlock_frequency">Freichalteintervall beschränken</string>
     <string name="label_allowed_proceeds">Erlaubte Prozesse: 3</string>
-    <string name="label_time_window">Zeitfenster: 60 mins</string>
+    <string name="label_time_window">Zeitfenster: 60 min</string>
     <string name="label_vibrate_brightness">Vibriere \u0026 max Helligkeit bei Warnung</string>
     <string name="label_reducer_analytics">Verringererstatistiken</string>
     <string name="label_logged_intents">Dokumentierte Versuche</string>
@@ -479,7 +479,7 @@
     <string name="btn_clear">Löschen</string>
     <string name="btn_restart">Neustarten</string>
     <string name="btn_share">Teilen</string>
-    <string name="focus_add_websites_desc">Gib spezifische Webseiten (z.B. facebook.com/*) oder verwende andere Stickpunkte zum Blockieren oder Erlauben während der Fokussitzung.</string>
+    <string name="focus_add_websites_desc">Gib spezifische Webseiten (z.B. facebook.com/*) an oder verwende andere Stichpunkte zum Blockieren oder Erlauben während der Fokussitzung.</string>
     <string name="create_app_group_title">Appgruppe erstellen</string>
     <string name="label_on_each_open">Bei jedem Öffnen</string>
     <string name="label_configure_allowed_schedule">Konfiguriere erlaubten Zeitplan</string>
@@ -493,7 +493,7 @@
     <string name="hint_unlock_method">Entsperrmethode</string>
     <string name="hint_required_sentence">Benötigter Satz</string>
     <string name="hint_custom_warning">Individueller Warnbildschirm</string>
-    <string name="hint_add_website">Webseite oder Stickwort hinzufügen</string>
+    <string name="hint_add_website">Webseite oder Stichwort hinzufügen</string>
     <string name="desc_previous_week">Letzte Woche</string>
     <string name="desc_next_week">Nächte Woche</string>
     <string name="desc_edit_group">Gruppe bearbeiten</string>
@@ -1182,7 +1182,7 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     "</string>
     <string name="learn_more">Mehr erfahren</string>
-    <string name="help">Hife</string>
+    <string name="help">Hilfe</string>
     <string name="more_options">Mehr Optionen</string>
     <string name="import_keywords">Stichwörter importieren</string>
     <string name="export_keywords">Stichwörter exportieren</string>
@@ -1193,7 +1193,7 @@
     <!-- UIHider -->
     <string name="delete">Löschen</string>
     <string name="ui_hider_title">UI verstecken (Skripte)</string>
-    <string name="ui_hider_desc">Schreibe kleine Skripte, um die UI einer App zu analysieren und sie zu überdecken, zurück oder home drücken zu lassen; Für Nutzer, die bereit sind, einfache Sktipte zu schreiben. \nWir empfehlen , dem Dicord beizutreten um neue Skripte anzufordern oder zu entdecken.</string>
+    <string name="ui_hider_desc">Schreibe kleine Skripte, um die UI einer App zu analysieren. sie zu überdecken oder um zurückzugehen oder die Hometaste drücken zu lassen. Empfohlen für Nutzer, die bereit sind, einfache Sktipte zu schreiben. \nWir empfehlen, dem Discord-Kanal beizutreten, um neue Skripte anzufordern oder zu entdecken.</string>
     <string name="enable_ui_hider">UI verstecken aktivieren</string>
     <string name="ui_hider_enable_subtitle">Skripte über unterstützte Apps laufen lassen</string>
     <string name="ui_hider_scripts">Skripte</string>
@@ -1203,20 +1203,20 @@
     <string name="ui_hider_label_hint">Markierung (optional)</string>
     <string name="ui_hider_script_label">SKRIPT</string>
     <string name="ui_hider_source_hint">if app != \"com.instagram.android\" { return }\n…</string>
-    <string name="ui_hider_preset_note">Diese Voreinstellung kommt mit der App. Du kannst sie hier lesen und an oder ausschalten, aber nicht bearbeiten.</string>
+    <string name="ui_hider_preset_note">Diese Voreinstellung kommt mit der App. Du kannst sie hier lesen und an- oder ausschalten, aber nicht bearbeiten.</string>
 
     <string name="node_picker_start">Knotenauswahl starten</string>
     <string name="node_picker_channel_name">Knotenauswahl</string>
     <string name="node_picker_notif_title">Knotenauswahl</string>
-    <string name="node_picker_notif_text">Klicken um Auswahl zu sarten</string>
+    <string name="node_picker_notif_text">Klicken, um Auswahl zu starten</string>
     <string name="node_picker_stop">Stopp</string>
-    <string name="node_picker_started_hint">Ich bin bereit. Öffne die App, die du sehen willst, dann klick auf meine Benachrichtigung und fang an auszuwählen.</string>
+    <string name="node_picker_started_hint">Ich bin bereit. Öffne die App, die du sehen willst, dann klick auf "meine Benachrichtigung" und fang an auszuwählen.</string>
     <string name="node_picker_need_accessibility">Bitte aktiviere zuerst meine Zugriffsrechte.</string>
     <string name="node_picker_need_overlay">Bitte lass mich zuerst über andere Apps schreiben</string>
-    <string name="node_picker_hint">Klicke auf jegliches Element auf dem Bildschirm um es anzusehen</string>
+    <string name="node_picker_hint">Klicke auf jegliches Element auf dem Bildschirm, um es anzusehen</string>
     <string name="node_picker_copied">In Zwischenablage kopiert</string>
     <string name="node_picker_up">Hoch</string>
-    <string name="node_picker_deeper">Tiefer</string>
+    <string name="node_picker_deeper">Runter</string>
     <string name="node_picker_move">Bewegen</string>
     <string name="node_picker_info">Info</string>
     <string name="node_picker_copy">Kopieren</string>
@@ -1224,9 +1224,9 @@
     <string name="node_picker_show">Panel anzeigen</string>
     <string name="node_picker_close">Schließen</string>
 
-    <string name="terms_consent_title">Ein schneller Einwurf</string>
-    <string name="terms_consent_body">Bevor du anfängst, bitte ließ unsere Geschäftsbedingungen und Datenschutzrichtlinie.</string>
-    <string name="terms_consent_footer">Auf \"Ich stimme zu\" zu klicken bedeutet, beiden zuzustimmen.</string>
+    <string name="terms_consent_title">Eine kurze Anmerkung</string>
+    <string name="terms_consent_body">Bevor du anfängst, bitte lies unsere Geschäftsbedingungen und Datenschutzrichtlinie.</string>
+    <string name="terms_consent_footer">Auf \"Ich stimme zu\" zu klicken bedeutet, beidem zuzustimmen.</string>
     <string name="terms_consent_terms_link">Geschäftsbedingungen lesen</string>
     <string name="terms_consent_privacy_link">Datenschutzrichtlinie lesen</string>
     <string name="terms_consent_agree">Ich stimme zu</string>
@@ -1238,20 +1238,20 @@
     <string name="label_automation">AUTOMATISIERUNG</string>
     <string name="api_screen_title">Curbox API</string>
     <string name="api_card_subtitle">Lass andere Apps Curbox steuern</string>
-    <string name="api_screen_subtitle">Andere Apps können dich auffordern, Fokusmodus zu starten, Sperren zu aktivieren und deine Daten auszulesen. Du entscheidest, wer Zugriff bekommt.</string>
+    <string name="api_screen_subtitle">Andere Apps können dich auffordern, den Fokusmodus zu starten, Sperren zu aktivieren und deine Daten auszulesen. Du entscheidest, wer Zugriff bekommt.</string>
     <string name="api_enable_title">Andere Apps zulassen</string>
     <string name="api_enable_subtitle">Wenn das hier aus ist, kann keine App Curbox steuern, auch wenn du das vorher erlaubt hast.</string>
     <string name="api_connected_title">Verbundene Apps</string>
-    <string name="api_no_apps">Keine Apps verbunden. Curbox wird nach deiner Zustimmung fragen wenn eine App Zugriff fordert, dann die zugelassenen Apps hier anzeigen.</string>
+    <string name="api_no_apps">Keine Apps verbunden. Curbox wird nach deiner Zustimmung fragen wenn eine App Zugriff fordert, und dann die zugelassenen Apps hier anzeigen.</string>
     <string name="api_revoke">Löschen</string>
     <string name="api_how_title">Wie es funktioniert</string>
-    <string name="api_how_body">Wenn eine andere App Zugriff anfordert, zeigt Curbox dir den Namen und fragt nach deiner Zustimmung. Eine zugelassene App kann Befehle ausführen bis du sie entfernst. Eine App zu entfernen beendet ihren Zugriff direkt.</string>
+    <string name="api_how_body">Wenn eine andere App Zugriff anfordert, zeigt Curbox dir den Namen der App und fragt nach deiner Zustimmung. Eine zugelassene App kann Befehle ausführen bis du sie entfernst. Eine App zu entfernen beendet sofort ihren Zugriff.</string>
     <string name="api_help_popup">Andere Apps können danach fragen, Curbox zu kontrollieren. Du kannst jede einzelne zulassen oder ablehnen und du kannst den Zugriff jederzeit sperren.</string>
 
     <!-- Service protection (keep alive) -->
     <string name="service_protection_title">Lass Curbox weiterlaufen</string>
     <string name="service_protection_card_subtitle">Hilf, Curbox\' Sperren weiterlaufen zu lassen</string>
-    <string name="service_protection_subtitle">Manche Handys stoppen Curbox im Hintergrund um Akku zu sparen. Diese Optionen helfen dir, die Sperren laufenzulassen und neu zu starten, wenn sie stoppen. Keine Option kann garantieren, dass Curbox immer laufen wird.</string>
+    <string name="service_protection_subtitle">Manche Handys stoppen Curbox im Hintergrund, um Akku zu sparen. Diese Optionen helfen dir, die Sperren laufenzulassen und neu zu starten, wenn sie stoppen. Keine Option kann garantieren, dass Curbox immer laufen wird.</string>
     <string name="service_protection_master_title">Schutz</string>
     <string name="service_protection_master_desc">Alle unten aufgeführten Schichten aktivieren</string>
     <string name="service_protection_status_header">Was arbeitet gerade</string>
@@ -1259,7 +1259,7 @@
     <string name="service_protection_services_on">Sperren laufen</string>
     <string name="service_protection_services_off">Sperren laufen nicht</string>
     <string name="service_protection_row_battery_title">Akkunutzung</string>
-    <string name="service_protection_battery_ok">Akkueistellungen helfen Curbox, aktiv zu bleiben</string>
+    <string name="service_protection_battery_ok">Akkueinstellungen helfen Curbox, aktiv zu bleiben</string>
     <string name="service_protection_battery_bad">Akkueinstellungen könnte Curbox stoppen, um Akku zu sparen.</string>
     <string name="service_protection_row_autostart_title">Autostart</string>
     <string name="service_protection_row_autostart_desc">Manche Handys benötigen separate Einstellungen um Curbox automatisch starten zu können. Bitte erlaube Autostart</string>
@@ -1276,24 +1276,24 @@
     <string name="service_protection_autostart_manual">Bitte öffne deine Einstellungen und erlaube Curbox, automatisch zu starten</string>
     <string name="service_protection_advanced_header">Fortgeschritten</string>
     <string name="service_protection_device_owner">Mach Curbox zum Besitzer des Geräts</string>
-    <string name="service_protection_device_owner_warning">Das ist die stärkste Option. Es bleibt sogar nach einem zwanghaften beenden an und blockiert eine Desinstallation komplett. Es funktioniert nur auf einem Handy ohne Accounts und ist kompliziert, später wieder zu entfernen. Tu dies nur wenn du dir sicher bist.</string>
+    <string name="service_protection_device_owner_warning">Das ist die stärkste Option. Die App bleibt sogar nach einem zwanghaften Beenden aktiv und blockiert eine Deinstallation komplett. Es funktioniert nur auf einem Handy ohne Accounts und ist kompliziert zu entfernen. Tu dies bitte nur, wenn du dir absolut sicher bist.</string>
     <string name="service_protection_cancel">Abbrechen</string>
     <string name="service_protection_continue">Fortfahren</string>
-    <string name="service_protection_help_popup">Handy beenden oft Hintergrundapps um Akku zu sparen. Dieser Bildschirm hiflt Curbox, mit Akkuzugriff, Autostart, normalen Checks und optionaler Wiederherstellung durch Shizuku weiterzulaufen. Diese Optionen machen es schwerer, Curbox zu stoppen, aber es kann nicht garantiert werden, dass es immer laufen wird.</string>
+    <string name="service_protection_help_popup">Handys beenden oft Hintergrundapps um Akku zu sparen. Dieser Bildschirm hilft Curbox, mit Akkuzugriff, Autostart, normalen Checks und optionaler Wiederherstellung durch Shizuku weiterzulaufen. Diese Optionen machen es schwerer, Curbox zu stoppen, aber es kann nicht garantiert werden, dass es immer laufen wird.</string>
     <string name="service_protection_channel_name">Service-Schutz</string>
     <string name="service_protection_down_title">Curbox\' Sperren gestoppt</string>
-    <string name="service_protection_down_text">Tippe um sie wieder einzuschalten sodass deine Sperren weiterlaufen</string>
+    <string name="service_protection_down_text">Tippe, um sie wieder einzuschalten, sodass deine Sperren weiterlaufen können</string>
 
     <!-- Tamper protection -->
     <string name="anti_uninstall_title">Manipulationsschutz</string>
     <string name="anti_uninstall_card_subtitle">Mach es schwerer, Curbox zu deinstallieren</string>
-    <string name="anti_uninstall_subtitle">Wenn das hier an ist, kann Curbox nicht deinstalliert werden bis du es manuell ausschaltest. Stell es dir vor wie einen Sicherheitsgurt für deine Willenskraft.</string>
-    <string name="anti_uninstall_limits_warning">Dies macht es nicht unmöglich, Curbox zu installieren. Es macht die Deinstallation nur schwerer.</string>
-    <string name="anti_uninstall_disable_warning">Curbox hälst sich selbst installiert um deinen Fokus zu schützen. Deaktiviere zuerst Manipulationsschutz in der App.</string>
+    <string name="anti_uninstall_subtitle">Wenn diese Einstellung aktiv ist, kann Curbox nicht deinstalliert werden, bis du es manuell ausschaltest. Stell es dir vor wie einen Sicherheitsgurt für deine Willenskraft.</string>
+    <string name="anti_uninstall_limits_warning">Das macht es nicht unmöglich, Curbox zu deinstallieren. Es macht die Deinstallation nur schwerer.</string>
+    <string name="anti_uninstall_disable_warning">Curbox hält sich selbst installiert, um deinen Fokus zu schützen. Deaktiviere zuerst Manipulationsschutz in der App.</string>
     <string name="anti_uninstall_setup_again">Etwas ist schiefgelaufen. Bitte wähle deine Authentifizierungsoption nochmal.</string>
-    <string name="anti_uninstall_admin_explanation">Curbox benutzt dies um sich selbst installiert zu halten während der Schutz an ist.</string>
-    <string name="anti_uninstall_admin_needed">Diese Berechtigung ist benötigt um Curbox installiert zu halten.</string>
-    <string name="anti_uninstall_help_popup">Wenn dies an ist, kann Curbox nicht deinstalliert werden und seine Services können nicht deaktiviert werden bis du es deaktivierst mit der von dir gewählten Methode: ein Passwort, ein paar Tage warten oder ein eintägiger Countdown, den du jederzeit stoppen kannst.</string>
+    <string name="anti_uninstall_admin_explanation">Curbox benutzt dies, um sich selbst installiert zu halten während der Schutz an ist.</string>
+    <string name="anti_uninstall_admin_needed">Diese Berechtigung wird benötigt, um Curbox installiert zu halten.</string>
+    <string name="anti_uninstall_help_popup">Wenn diese Einstellung aktiv ist, kann Curbox nicht deinstalliert werden und seine Services können nicht deaktiviert werden, bis du es manuell deaktivierst mit der von dir gewählten Methode: ein Passwort, ein paar Tage warten oder ein eintägiger Countdown, den du jederzeit stoppen kannst.</string>
 
     <string name="anti_uninstall_status_off_title">Schutz ist aus</string>
     <string name="anti_uninstall_status_off_body">Curbox kann grade deinstalliert werden</string>
@@ -1301,12 +1301,12 @@
     <string name="anti_uninstall_status_unlocking_title">Wird bald ausgeschaltet</string>
     <string name="anti_uninstall_status_unlocking_body">Schutz wird in %1$s deaktiviert.</string>
 
-    <string name="anti_uninstall_summary_password">Dein Passwort wird benötigt um den Schutz zu deaktivieren</string>
+    <string name="anti_uninstall_summary_password">Dein Passwort wird benötigt, um den Schutz zu deaktivieren</string>
     <plurals name="anti_uninstall_summary_timed">
-        <item quantity="one">Nachdem du es forderst wird der Schutz nach %1$d Tag beendet.</item>
-        <item quantity="other">Nachdem du es forderst wird der Schutz nach %1$d Tagen beendet.</item>
+        <item quantity="one">Nachdem du es forderst, wird der Schutz nach %1$d Tag beendet.</item>
+        <item quantity="other">Nachdem du es forderst, wird der Schutz nach %1$d Tagen beendet.</item>
     </plurals>
-    <string name="anti_uninstall_summary_cooldown">Du musst einen Tag warten um den Schutz auszuschalten. Die Anfrage kann jederzeit abgebrochen werden.</string>
+    <string name="anti_uninstall_summary_cooldown">Du musst einen Tag warten, um den Schutz auszuschalten. Die Anfrage kann jederzeit abgebrochen werden.</string>
 
     <string name="anti_uninstall_pick_mode">Wie soll der Schutz deaktiviert werden können?</string>
     <string name="anti_uninstall_mode_password_title">Passwort</string>
@@ -1320,8 +1320,8 @@
 
     <string name="anti_uninstall_turn_on">Schutz aktivieren</string>
     <string name="anti_uninstall_turn_off">Schutz deaktivieren</string>
-    <string name="anti_uninstall_keep_on">Schutz an behalten</string>
-    <string name="anti_uninstall_turned_on">Schtz ist an</string>
+    <string name="anti_uninstall_keep_on">Schutz aktiv halten</string>
+    <string name="anti_uninstall_turned_on">Schutz ist an</string>
     <string name="anti_uninstall_start">Start</string>
     <string name="anti_uninstall_cancel">Abbrechen</string>
     <string name="anti_uninstall_save">Speichern</string>
@@ -1335,10 +1335,10 @@
     <string name="anti_uninstall_wrong_password">Das Passwort ist falsch.</string>
 
     <plurals name="anti_uninstall_timed_confirm">
-        <item quantity="one">Der Schutz wird in %1$d Tag abgeschaltet. Sobald das Warten beginnt kann es nicht abgebrochen werden.</item>
-        <item quantity="other">Der Schutz wird in %1$d Tagen abgeschaltet. Sobald das Warten beginnt kann es nicht abgebrochen werden.</item>
+        <item quantity="one">Der Schutz wird in %1$d Tag abgeschaltet. Sobald die wartezeit beginnt, kann es nicht abgebrochen werden.</item>
+        <item quantity="other">Der Schutz wird in %1$d Tagen abgeschaltet. Sobald die Wartezeit beginnt, kann es nicht abgebrochen werden.</item>
     </plurals>
-    <string name="anti_uninstall_cooldown_confirm">Der Schutz wird in einem Tag deaktiviert. Du kannst jederzeit abbrechen.</string>
+    <string name="anti_uninstall_cooldown_confirm">Der Schutz wird in einem Tag deaktiviert. Du kannst es jederzeit abbrechen.</string>
 
     <string name="anti_uninstall_remaining">%1$dh %2$dm %3$ds</string>
     <string name="anti_uninstall_remaining_with_days">%1$dd %2$dh %3$dm %4$ds</string>
@@ -1346,11 +1346,11 @@
     <!-- Settings change delay -->
     <string name="change_delay_title">Verzögerung einstellen</string>
     <string name="change_delay_card_subtitle">Schwächere Einstellungen warten, bevor sie angewandt werden.</string>
-    <string name="change_delay_subtitle">Das hilft, impulsive Änderungen vorzubeugen, die deine Regeln abschwächen. Härtere Änderungen werden direkt angewandt. Schwächere Änderungen müssen warten und können jederzeit gestoppt werden bevor sie angewandt werden.</string>
+    <string name="change_delay_subtitle">Das hilft, impulsiven Änderungen vorzubeugen, die deine Regeln abschwächen. Härtere Änderungen werden direkt angewandt. Schwächere Änderungen müssen warten und können jederzeit gestoppt werden, bevor sie angewandt werden.</string>
     <string name="change_delay_master_title">Änderungsverzögerung aktivieren</string>
-    <string name="change_delay_master_desc">Das hier auszuschalten oder eine kürzere Wartezeit einzustellen muss auch die gesamte Verzögerung warten.</string>
-    <string name="change_delay_tamper_lock_title">Außerdem Manipulationsschutz benötigen</string>
-    <string name="change_delay_tamper_lock_desc">Schwächere Änderungen bleiben unangewandt, wenn Manipulationsschutz an ist, auch wenn die Verzögerung endet. Schalte Manipulationsschutz aus, um sie anzuwenden.</string>
+    <string name="change_delay_master_desc">Das hier auszuschalten oder eine kürzere Wartezeit einzustellen muss auch die gesamte Verzögerungszeit warten.</string>
+    <string name="change_delay_tamper_lock_title">Außerdem muss Manipulationsschutz deaktiviert sein</string>
+    <string name="change_delay_tamper_lock_desc">Schwächere Änderungen bleiben unverwendet, wenn Manipulationsschutz an ist, auch wenn die Verzögerungszeit endet. Schalte Manipulationsschutz aus, um sie anzuwenden.</string>
     <string name="change_delay_duration_header">Wie lang müssen schwächere Änderungen warten?</string>
     <string name="change_delay_none">Gar nicht</string>
     <string name="change_delay_10m">10 Minuten</string>
