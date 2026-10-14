@@ -11,7 +11,7 @@
         Dieses Feature benötigt die Berechtigung, über anderen Apps dargestellt werden zu können, um zu funktionieren. Bitte aktiviere das zuerst, bevor du dieses aktivierst. Sollte etwas aufhören zu funktionieren, starte die App neu.\n\n
         Durch Aktivierung kann Curbox folgendes für dich tun:\n1. Apps blockieren\n2. Kurzforminhalte blockieren\n3. Webseiten und Stichpunkte blockieren\n4. Fokusmodus\n5. Teile einer App verstecken, die dich ablenken\n6. Sehen, wie viel Zeit du in welcher App verbringst\n7. Zählen, wie viele Kurzformvideos du scrollst und die Zahl schwebend in App anzeigen\n8. Sehen welche Webseiten du besuchst und für wie lang\n\n
         Curbox benötigt barrierefreien Zugang umd zu sehen, auf welcher App, Webseite oder Bildschirm du bist, sodass es nach deinen Wünschen blockiert werden kann und deine Nutzungsdaten behalten werden können. Ohne das wird nichts davon funktionieren.\n\n
-        Curbox teilt niemald irgendetwas ohne deine Zustimmung.
+        Curbox teilt keine Daten ohne deine explizite Zustimmung.
         \n\n
     </string>
     <string name="admin_permission_desc">Curbox Manipulationsschutz</string>
@@ -19,7 +19,7 @@
     <string name="proceed">Fortfahren</string>
     <string name="cancel">Abbruch</string>
     <string name="configure_warning_screen">Warnungsbildschirm</string>
-    <string name="proceed_in">Bitte warte %1$d bis du fortfahren kannst.</string>
+    <string name="proceed_in">Bitte warte %1$d Sekunden, bis du fortfahren kannst.</string>
     <string name="select_all">Alle auswählen</string>
     <string name="clear_all">Alle löschen</string>
     <string name="focus_ready">Bereit dich zu fokussieren?</string>
@@ -33,7 +33,7 @@
     <string name="focus_stats">Fokusstatistiken</string>
     <string name="focus_sessions_label">Sitzungen</string>
     <string name="focus_total_time_label">Gesamtzeit</string>
-    <string name="focus_streak_label">Strähne</string>
+    <string name="focus_streak_label">Serie</string>
     <string name="focus_avg_duration">Durchschn. Dauer</string>
     <string name="focus_completion_rate">Vollendet</string>
     <string name="focus_top_tags">Top Tags</string>
@@ -45,11 +45,11 @@
         <item quantity="other">• %1$s (%2$d Sitzungen)</item>
     </plurals>
     <string name="quick_setup_guide">Schnelleinrichtung</string>
-    <string name="curbox_needs_accessibility_permissions_to_help">Curbox benötigt Berechtigung für Bedieungshilfen um dir beim verfolgen deiner Bilschirmzeit zu helfen. Der Einrichtungsprozess hängt davon ab, wie du die App installiert hast.</string>
+    <string name="curbox_needs_accessibility_permissions_to_help">Curbox benötigt Berechtigung für Bedienungshilfen um dir beim Verfolgen deiner Bilschirmzeit zu helfen. Der Einrichtungsprozess hängt davon ab, wie du die App installiert hast.</string>
     <string name="fdroid_installation">F-Droid Installation</string>
-    <string name="installed_via_fdroid_appnyoure_all_set">✅ Über F-Droid installiert?\nAlles klar! Folge einfach den Anweisungen im nächsten Schritt.\n\n⚠️ Von der F-Droid Website installiert?\nBitte intalliere Curbox durch die F-Droid App um Berechtigungsprobleme zu vermeiden.</string>
+    <string name="installed_via_fdroid_appnyoure_all_set">✅ Über F-Droid installiert?\nAlles klar! Folge einfach den Anweisungen im nächsten Schritt.\n\n⚠️ Von der F-Droid Website installiert?\nBitte installiere Curbox durch die F-Droid App um Berechtigungsprobleme zu vermeiden.</string>
     <string name="apk_installation">APK Installation</string>
-    <string name="if_you_installed_from_an_apk">Wenn du aus eine APK installiert hast, folge den Schritten:\n\n1️⃣ Einstellungen öffnen → Apps → Curbox\n\n2️⃣ Klicke auf Berechtigungen → Spezieller App Zugriff → Barrierefreiheit → Curbox aktivieren\n\n3️⃣ Zurückkehren zur Curbox App Info → Scrolle nach unten → Klicke eingeschränkte Einstellungen → Erlauben\n\n💡 Pro Tipp: Installiere via F-Droid App für eine einfachere Einrichtung! 🚀</string>
+    <string name="if_you_installed_from_an_apk">Wenn du eine APK installiert hast, folge den Schritten:\n\n1️⃣ Einstellungen öffnen → Apps → Curbox\n\n2️⃣ Klicke auf Berechtigungen → Spezieller App Zugriff → Barrierefreiheit → Curbox aktivieren\n\n3️⃣ Zurückkehren zur Curbox App Info → Scrolle nach unten → Klicke eingeschränkte Einstellungen → Erlauben\n\n💡 Pro Tipp: Installiere via F-Droid App für eine einfachere Einrichtung! 🚀</string>
     <string name="usage_timeline">Nutzungszeitstrahl</string>
     <string name="screentime">Bildschirmzeit</string>
     <string name="app_opens">Appöffnungen</string>
@@ -67,15 +67,15 @@
     <string name="app_blocker">Apps</string>
     <string name="restrict_access_to_distracting_apps">Temporär Apps stummschalten</string>
     <string name="reels_blocker">Kurzformvideos</string>
-    <string name="disable_shortform_video_feeds">Verstecke Kurzforminhalte, um deine Aufmerksamkeitsspanne zu beschützen</string>
+    <string name="disable_shortform_video_feeds">Verstecke Kurzforminhalte, um deine Aufmerksamkeitsspanne zu schützen</string>
     <string name="auto_dnd">Auto BNS</string>
-    <string name="autodnd_help_popup">Autmatisch Benachrichtigungen in deinen Fokussitzungen stummschalten</string>
+    <string name="autodnd_help_popup">Automatisch Benachrichtigungen in deinen Fokussitzungen stummschalten</string>
     <string name="turn_on_focus_mode_between_set">Bitte nicht stören automatisch täglich aktivieren</string>
     <string name="blocked_keywords">Stichwörter und Webseiten</string>
     <string name="filter_specific_words_across_apps">Halte deinen digitalen Raum friedlich, indem du bestimmte Wörter filterst.</string>
     <string name="stimulation_reducers">Achtsame Impulse</string>
     <string name="on_screen_reminder">Sanfte Aufforderungen</string>
-    <string name="reel_counter">Short-Form Video Counter</string>
+    <string name="reel_counter">Kurzformvideo-Zähler</string>
     <string name="put_in_messages_and_counters_floating">Subtile Hinweise auf dem Bildschirm, um dich im hier und jetzt zu verankern.</string>
     <string name="track_the_number_of_reels_consumed">Deine Nutzung von Kurzforminhalten messen und analysieren</string>
     <string name="grayscale_filter">Grautonfilter</string>
@@ -83,8 +83,8 @@
     <string name="fuel_the_developer">Über den Entwickler ☕</string>
     <string name="hello_this_is_nethical_the_creator">Hey, I\'m Nethical, the person behind Curbox. I\'m 18, fresh out of high school, and a little obsessed with tech, art, and building cool things from scratch. A while back I went looking for a free app blocker that actually did what I wanted. Nothing came close, so I built my own. Curbox is that app, and I\'ve been pouring into it almost every day for over two years now. So happy you\'re here. I hope it helps you take your time back.</string>
     <string name="support_the_project">Das Projekt unterstützen ↗</string>
-    <string name="join_the_focus_pack">Werde Teil der Fokus Gemeinschaft</string>
-    <string name="dont_fix_your_screen_time_alone">Repariere deine Bilschirmzeit nicht alleine. Tritt unserem Discord bei um Gleichgesinnte zu treffen, die sich gegenseitig unterstützen und Strategien teilen, um sich selbst zu verbessern.</string>
+    <string name="join_the_focus_pack">Werde Teil der Fokusgemeinschaft</string>
+    <string name="dont_fix_your_screen_time_alone">Reduziere deine Bildschirmzeit nicht alleine. Tritt unserem Discord bei um Gleichgesinnte zu treffen, die sich gegenseitig unterstützen und Strategien teilen, um sich selbst zu verbessern.</string>
     <string name="join_the_discord">Tritt dem Discord bei</string>
     <string name="curboxapp">\@curb.me</string>
     <string name="follow_curbox">Folge Curbox</string>
@@ -106,7 +106,7 @@
     <string name="donate_prompt_give">Ich steuere etwas bei ❤</string>
     <string name="donate_prompt_share">Ich teile es stattdessen</string>
     <string name="donate_prompt_later">Vielleicht später</string>
-    <string name="share_curbox_message">Ich benutze Curbox, um die Kontrolle über meine Bildschirmzeit zurückzugewinnen. Es ist kostenlos, prober es aus: https://curbox.app</string>
+    <string name="share_curbox_message">Ich benutze Curbox, um die Kontrolle über meine Bildschirmzeit zurückzugewinnen. Es ist kostenlos, probier es aus: https://curbox.app</string>
     <string name="system_diagnostics">Systemdiagnosen</string>
     <string name="view_and_share_application_crash_logs">Betrachte und teile Absturzberichte, um zu helfen, Curbox zu verbessern</string>
     <string name="view_crash_logs">Absturzberichte ansehen</string>
@@ -156,9 +156,9 @@
     <string name="minutes_1">Minuten</string>
     <string name="its_a_temporary_block_that_appears">Es ist eine vorübergehende Sperre, die auftaucht wenn deine Zeit vorbei ist. Statt dich einfach auszusperren gibt es dir die Wahl: App direkt schließen oder &amp;quot;borrow&amp;quot; ein paar Minuten mehr bevor die Erinnerung wieder auftaucht.</string>
     <string name="skip_this_screen_and_go_back">Diesen Bildschirm überspringen und direkt zurück gehen</string>
-    <string name="let_me_decide_how_many_extra">Lass mich dann entscheiden wie viele extra Minuten ich brauche</string>
+    <string name="let_me_decide_how_many_extra">Lass mich dann entscheiden, wie viele extra Minuten ich brauche</string>
     <string name="use_a_predefined_limit_like_5">Verwende eine vorgegebene Zeit, z.B. 5 min</string>
-    <string name="show_me_the_warning_screen_but">Zeig mir einen Warnbildschirm aber lass mich nicht fortfahren</string>
+    <string name="show_me_the_warning_screen_but">Zeig mir einen Warnbildschirm, aber lass mich nicht fortfahren</string>
     <string name="how_long_to_unlock_for_after">Wie lange Freischalten nach Fortfahren?</string>
     <string name="how_long_to_wait_before_being">Wie lange warten bevor der weiter-Knopf gedrückt werden kann. Verhindert, direkt den Knopf zu drücken ohne die Nachricht gelesen zu haben.</string>
     <string name="duration_3_seconds">3 sek</string>
@@ -188,13 +188,13 @@
     <string name="block_all_except_selected">Alle bis auf Ausgewählte blockieren</string>
     <string name="let_me_quit_midsessions">Lass mich die Fokussitzung abbrechen</string>
     <string name="save_group">Gruppe speichern</string>
-    <string name="reel_blocker">Reel Sperre</string>
-    <string name="enable_reel_blocker">Reel Sperre aktivieren</string>
-    <string name="warning_screen">Warnungsbildschirm</string>
+    <string name="reel_blocker">Reel-Sperre</string>
+    <string name="enable_reel_blocker">Reel-Sperre aktivieren</string>
+    <string name="warning_screen">Warnbildschirm</string>
     <string name="blocking_basis">Sperrungsbasis</string>
     <string name="reel_count_based">Reel-Anzahl basiert</string>
     <string name="configure_limits">Grenzen konfigurieren</string>
-    <string name="reel_limits">Reel Grenzen</string>
+    <string name="reel_limits">Reel-Grenzen</string>
     <string name="apply_same_limit_to_every_day">Selbe Grenze jeden Tag anwenden</string>
     <string name="maximum_reels_allowed">Maximal erlaubte Reels</string>
     <string name="save_limits">Grenzen Speichern</string>
@@ -213,7 +213,7 @@
     <string name="most_used">AM MEISTEN VERWENDET</string>
     <string name="crunching_numbers">Zahlen werden ausgewertet...</string>
     <string name="usage_welcome_title">Hallo lieber Nutzer</string>
-    <string name="usage_welcome_message">Deine Appstatistiken werden genau hier erscheinen. Ich habe angefangen mitzustoppen, als du mich installiert hast. Bitte lies die Dokumentation, sodass du Curbox\' volles Potenzial ausschöpfen kannst.</string>
+    <string name="usage_welcome_message">Deine Appstatistiken werden genau hier erscheinen. Ich habe angefangen mitzuzählen, als du mich installiert hast. Bitte lies die Dokumentation, sodass du Curbox\' volles Potenzial ausschöpfen kannst.</string>
     <string name="usage_welcome_read_docs">Dokumentation lesen</string>
     <string name="usage_welcome_star_repo">Gib uns einen Stern</string>
     <string name="whats_new_title">Was ist neu?</string>
@@ -246,7 +246,7 @@
         um dich
         zu fesseln</string>
     <string name="you_arent_lazy_and_your_willpower">Du bist nicht faul und dein Wille ist nicht gebrochen. Du kämpfst nur gegen Algorithmen, die von tausenden Psychologen gebaut wurden, um dich ans Handy zu fesseln.</string>
-    <string name="lets_level_the_playing_field">Befreie auf meine Willenskraft</string>
+    <string name="lets_level_the_playing_field">Entlaste meine Willenskraft</string>
     <string name="lets_look_at_the_numbers">Lass uns auf die Zahlen schauen</string>
     <string name="how_many_hours_a_day_do">Wie viel scrollst du am Tag?</string>
     <string name="sample_usage_4_hours">4 std</string>
@@ -254,13 +254,13 @@
     <string name="i_want_my_time_back">Ich will meine Zeit zurück</string>
     <string name="what_are_you_making_room_for">Wofür schaffst du Raum?</string>
     <string name="mindless_scrolling_leaves_us_with_brain">Gedankenloses Scrollen hinterlässt uns vernebelt anstatt uns auszuruhen. Was würdest du lieber mit der zurückgewonnenen Zeit tun?</string>
-    <string name="focusing_on_deep_workstudying">Auf tiefe Arbeit/Lernen konzentrieren</string>
-    <string name="learning_a_new_skill_like_guitar">Eine neue Fähigkeit erlernen (Gitarre oder programmieren)</string>
+    <string name="focusing_on_deep_workstudying">Auf intensives Arbeiten/Lernen konzentrieren</string>
+    <string name="learning_a_new_skill_like_guitar">Eine neue Fähigkeit erlernen (Gitarre oder Programmieren)</string>
     <string name="being_present_with_friends_and_family">Präsent sein mit Freunden und Familie</string>
     <string name="getting_actual_restful_sleep">Wirklich guten und erholsamen Schlaf bekommen</string>
     <string name="commit_to_these_goals">Verpflichte dich diesen Zielen gegenüber</string>
     <string name="willpower_isnt_enough_we_use_friction">Willenskraft ist nicht genug. Wir verwenden Widerstand</string>
-    <string name="we_dont_just_block_your_apps">Wir blockieren nicht einfach deine Apps. Wir unterbrechen dein muscle memory. Wenn du gedankenlos auf Insta oder YouTube konsumierst, zwingen wir dich zum durchatmen und aktiv wählen, ob es deine Zeit wert ist.</string>
+    <string name="we_dont_just_block_your_apps">Wir blockieren nicht einfach deine Apps. Wir unterbrechen deine muscle memory. Wenn du gedankenlos auf Insta oder YouTube konsumierst, zwingen wir dich zum durchatmen und aktiv wählen, ob es deine Zeit wert ist.</string>
     <string name="make_me_pause">Zwing mich, zu stoppen</string>
     <string name="choose_your_first_target">Wähle dein erstes Ziel</string>
     <string name="dont_try_to_change_everything_at">Versuche nicht, alles auf einen Schlag anzugehen. Wähle die eine App, die dich am ehesten fesselt</string>
@@ -282,7 +282,7 @@
     <string name="usage_access">Benutzungszugriff</string>
     <string name="send_notifications">Benachrichtigungen senden</string>
     <string name="app_blocker_accessibility">Appsperre (Zugriff)</string>
-    <string name="do_you_want_to_restore_a">Willst du ein vorher erstelltest Backup laden? Das kannst du später nicht nochmal tun.</string>
+    <string name="do_you_want_to_restore_a">Willst du ein vorher erstelltes Backup laden? Das kannst du später nicht nochmal tun.</string>
     <string name="restore_backup">Backup wiederherstellen</string>
     <string name="enable_permissions">Berechtigungen aktivieren</string>
     <string name="add_widget_to_homescreen">Widget zum Startbildschirm hinzufügen</string>
@@ -302,7 +302,7 @@
     <string name="sync_is_on_pitch">Deine Einstellungen und Zeitstatistiken bleiben auf deinem Gerät. Klicke um die Synchronisation zu verwalten oder dich abzumelden.</string>
     <string name="manage_sync">Synchronisation verwalten</string>
     <string name="this_app_is_currently_under_focus">Diese App ist momentan unter dem Fokusmodus</string>
-    <string name="blocked_keyword_word_was_found">Blockiertes Stickwort -word wurde gefunden</string>
+    <string name="blocked_keyword_word_was_found">Blockiertes Stichwort -word wurde gefunden</string>
     <string name="please_provide_draw_over_other_apps">Bitte aktiviere \'Über anderen Apps anzeigen\', um diese Funktion richtig funktionieren zu lassen.</string>
     <string name="added_successfully">Erfolgreich hinzugefügt</string>
     <string name="package_already_exists">Paket existiert bereits</string>
@@ -357,15 +357,15 @@
     <string name="blocking_service_channel_name">Sperrservice</string>
     <string name="blocking_service_channel_description">Läuft im Hintergrund um dich zu schützen</string>
     <string name="blocking_service_notification_title">Curbox %1$s ist aktiv</string>
-    <string name="blocking_service_notification_text">Beschütze dein digitales Wohlbefinden</string>
-    <string name="picker_no_element_found">Kein Element gefunden an diesem Punkt</string>
+    <string name="blocking_service_notification_text">Schütze dein digitales Wohlbefinden</string>
+    <string name="picker_no_element_found">Kein Element an diesem Punkt gefunden</string>
     <string name="picker_no_element_selected">Kein Element ausgewählt</string>
     <string name="picker_default_text">Text</string>
     <string name="dialog_title_select_date_range">Datumsspanne auswählen</string>
     <string name="dialog_title_select_export_range">Exportspanne auswählen</string>
     <string name="toast_unsupported_browser">Nicht unterstützter Browser</string>
     <string name="notification_title_remaining_usage">Überbliebene Nutzung vor Sperrung</string>
-    <string name="notification_title_focus_mode_on">Fokusmodus ist an</string>
+    <string name="notification_title_focus_mode_on">Fokusmodus ist aktiv</string>
 
     <string name="nfc_focus_started">Fokus startete: %1$s (%2$d min)</string>
     <string name="nfc_focus_stopped">Fokus stoppte</string>
@@ -375,7 +375,7 @@
 
     <string name="onboarding_non_session_title">Nicht sitzungsbasierte Installation erkannt</string>
     <string name="onboarding_restricted_settings_desc">Android 13+ schränkt Zugriffsdienste für Apps, die nicht aus App Stores (wie F-Droid oder Play Store) kommen ein. Um Berechtigungen zu aktivieren musst du \'Eingeschränkte Einstellungen\' manuell für Curbox aktivieren. Alternativ installire via F-Droid App (nicht Webseite), um dies zu vermeiden.</string>
-    <string name="onboarding_show_tutorial">Anleitung um Berechtigungen zu aktivieren anzeigen</string>
+    <string name="onboarding_show_tutorial">Anleitung, um Berechtigungen zu aktivieren, anzeigen</string>
     <string name="onboarding_shizuku_grant">Gewähre alle Berechtigungen mit Shizuku</string>
     <string name="sync_paywall_title">Stelle die Einrichtung der Synchronisation fertig.</string>
     <string name="sync_paywall_subtitle">Dein Account ist bereit. Wähle den jährlichen Plan um fortzufahren.</string>
@@ -399,7 +399,7 @@
     <string name="dnd_access_dialog_message">Curbox benötigt dies, um Bitte nicht stören für dich zu aktivieren, sodass du Anrufe und Wecker stummschalten kannst während du dich fokussierst. Ohne kann Curbox Ablenkungen nicht stummschalten.\n\n🔒 Curbox sammelt, sendet oder speichert niemals deine Daten auf einem Server ohne deine Zustimmung.\n\n🛡️ Curbox respektiert deinen Frieden: Es benutzt dies nur um Ablenkungen stummzuschalten wenn du danach fragst.</string>
     <string name="picker_dialog_block_element">Dieses Element blockieren</string>
     <string name="picker_dialog_generated_rule">Generierte Regel:</string>
-    <string name="picker_dialog_rule_desc">Auto-generiert aus deiner Auswahl. Wechsle zwischen Chips unten um anzupassen.</string>
+    <string name="picker_dialog_rule_desc">Auto-generiert aus deiner Auswahl. Wechsle zwischen Chips unten, um anzupassen.</string>
     <string name="picker_dialog_element_properties">⊕ Eigenschaften des Elements</string>
     <string name="picker_dialog_properties_desc">Was identifiziert dieses Element? Schalte um, um das Element dieser Regel hinzuzufügen/zu entfernen.</string>
     <string name="picker_dialog_blocking_action">⚡ Blockiere Aktion</string>
